@@ -6,20 +6,21 @@ import './Home.css'
 const Work = () => {
   const workInfoData = [
     {
-      image: PickMeals,
-      title: "Eat Healthy",
+      image: ChooseMeals,
+      title: "View Relevant Blogs",
       text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
     },
     {
       image: ChooseMeals,
-      title: "Keep appointments",
+      title: "Keep Appointments",
       text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
     },
     {
       image: ChooseMeals,
-      title: "Healthy Lifestyle",
+      title: "View Lab results",
       text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
-    },
+    }
+
   ];
   return (
     <div className="work-section-wrapper">

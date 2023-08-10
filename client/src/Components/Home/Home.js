@@ -8,6 +8,7 @@ import './Home.css'
 import About from "./About";
 import Work from "./Work";
 import Testimonial from "./Testimonial.js";
+import AboutHealth from "./AboutHealth";
 
 const Home = () => {
   return (
@@ -18,7 +19,7 @@ const Home = () => {
         </div>
         <div className="home-text-section">
           <h1 className="primary-heading">
-            Your Favorite Health Care Providers.
+            Your Favorite Maternal Health Care Providers.
           </h1>
           <p className="primary-text">
             Sign up to have a stress free and well-informed pregnancy experience.
@@ -27,9 +28,11 @@ const Home = () => {
         Sign Up<FiArrowRight />{" "}
       </Link>
         </div>
+
       </div>
       <Work/>
       <About/>
+      <AboutHealth/>
     <Testimonial/>
     </div>
 
