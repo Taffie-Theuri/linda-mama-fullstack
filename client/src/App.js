@@ -47,7 +47,7 @@ function App() {
   const results = useSelector(state => state.results.entities)
   const docAppointments = useSelector(state => state.appointments.entities)
 
-  useEffect((docAppointments,patients) => {
+  useEffect((docAppointments) => {
     if(user && !user.doc){
       setPatientAppts(docAppointments.filter(appt => appt.patient_id === user.id))
     }
