@@ -14,7 +14,7 @@ const About = () => {
       </div>
       <div className="about-section-text-container">
         <h1 className="primary-heading">
-          Food Is An Important Part Of A Healthy Pregnancy
+          Food Is An Important Part Of A Healthy Pregnancy.
         </h1>
         <p className="primary-text">
           Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
