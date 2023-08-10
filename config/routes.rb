@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   resources :doctors, only: [:index, :show]
   resources :patients, only: [:index, :show, :create, :destroy]
   resources :departments, only: [:index]
-  resources :diet_questions
   resources :diet_blogs
 
   post '/doclogin', to: 'sessions#doclogin'

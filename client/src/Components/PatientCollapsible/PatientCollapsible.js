@@ -20,21 +20,22 @@ const PatientCollapsible = ({ patient, docAppointments}) => {
           </span>
         </button>
       </div>
-      
       <div className='collapsible'>
-        {docAppointments.map(appt => {
-          if(appt.patient_id === patient.id) {
-            return (
-              <ul key={appt.id} className={expand ? "expanded" : 'collapsed'}>
-                <h3>{appt.startDate.split('-')[1]}/{appt.startDate.split('-')[2].split('T')[0]}/{appt.startDate.split('-')[0]}:</h3>
-                <li>Procedure: {appt.title}</li>
-                <li>Room: {appt.location}</li>
-                <li>Notes: {appt.notes}</li>
-              </ul>
-            )
-          }
-        })}
-      </div>
+  {docAppointments.map(appt => {
+    if (appt.patient_id === patient.id) {
+      return (
+        <ul key={appt.id} className={expand ? "expanded" : 'collapsed'}>
+          <h3>{appt.startDate.split('-')[1]}/{appt.startDate.split('-')[2].split('T')[0]}/{appt.startDate.split('-')[0]}:</h3>
+          <li>Procedure: {appt.title}</li>
+          <li>Room: {appt.location}</li>
+          <li>Notes: {appt.notes}</li>
+        </ul>
+      );
+    } else {
+      return null; // Add a default return value for cases where the condition is not met
+    }
+  })}
+</div>
     </div>
   )
 }
