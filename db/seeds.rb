@@ -1,4 +1,9 @@
 require 'faker'
+Department.destroy_all
+Doctor.destroy_all
+Patient.destroy_all
+Appointment.destroy_all
+Result.destroy_all
 
 puts "🌱 Seeding spices..."
 puts 'Seeding departments..'

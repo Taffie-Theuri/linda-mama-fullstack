@@ -17,6 +17,7 @@
   padding: 10px 20px;
   margin-left: 70px;
   width: 300px;
+  background-color: orange;
   position: relative;
   overflow: hidden;
   transition: color .5s;
@@ -24,7 +25,7 @@
   transition: outline-color .5s;
 }
 .dept:hover{
-  color: rgba(84,58,183,1);
-  background-color: rgba(0,172,193,1);
-  outline-color: rgba(84,58,183,1);
+  color: rgba(242,140,40,1);
+  background-color: white;
+  outline-color: rgba(242,140,40,1);
 }
