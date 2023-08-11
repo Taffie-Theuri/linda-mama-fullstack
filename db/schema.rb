@@ -15,8 +15,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_11_055610) do
   enable_extension "plpgsql"
 
   create_table "appointments", force: :cascade do |t|
-    t.bigint "patient_id", null: false
-    t.bigint "doctor_id", null: false
+    t.bigint "patient_id"
+    t.bigint "doctor_id"
     t.string "startDate"
     t.string "endDate"
     t.string "title"
@@ -96,7 +96,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_11_055610) do
     t.integer "bun"
     t.integer "calcium"
     t.string "test_date"
-    t.bigint "patient_id", null: false
+    t.bigint "patient_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["patient_id"], name: "index_results_on_patient_id"

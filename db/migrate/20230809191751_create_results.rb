@@ -11,7 +11,7 @@ class CreateResults < ActiveRecord::Migration[7.0]
       t.integer :bun
       t.integer :calcium
       t.string :test_date
-      t.references :patient, null: false, foreign_key: true
+      t.references :patient, null: true, foreign_key: true
 
 
 

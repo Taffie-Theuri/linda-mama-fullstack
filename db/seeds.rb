@@ -6,6 +6,8 @@ Appointment.destroy_all
 Result.destroy_all
 
 
+
+
 puts "🌱 Seeding spices..."
 puts 'Seeding departments..'
 Department.create(name: 'Anesthesiology', image: 'https://www.teamhealth.com/wp-content/uploads/2020/05/TH-12623-June-Blog_CAA2_Blog.jpg')
@@ -26,7 +28,7 @@ Doctor.create(title: 'MD', name: 'Patch Adams', bio: Faker::Movies::Hobbit.quote
     title: 'MD',
     name: Faker::Movies::LordOfTheRings.character,
     bio: Faker::Movies::Hobbit.quote,
-    department_id: rand(1..Department.all.size),
+    department_id: rand(1..10),
     email: "#{Faker::Internet.username}@gmail.com",
     password: Faker::Internet.password,
     doc: true
@@ -37,7 +39,7 @@ end
     title: 'DO',
     name:Faker::Movies::LordOfTheRings.character,
     bio: Faker::Movies::Hobbit.quote,
-    department_id: rand(1..Department.all.size),
+    department_id: rand(1..10),
     email: "#{Faker::Internet.username}@gmail.com",
     password: Faker::Internet.password,
     doc: true
