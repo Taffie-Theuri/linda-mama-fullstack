@@ -39,3 +39,6 @@ gem 'faker'
 
 gem "active_model_serializers", "~> 0.10.13"
 
+gem "jwt", "~> 2.7"
+gem 'sendgrid-ruby'
+

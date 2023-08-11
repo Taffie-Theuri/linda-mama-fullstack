@@ -1,0 +1,121 @@
+/* Post1.css */
+/* Center-align the post-cards within the middle column */
+.posts-container {
+    display: grid;
+    width:max-content;
+    /* grid-template-columns: 1fr minmax(auto,50px) 1fr; Three columns: 1fr for left and right margins, 800px for the middle column */
+    gap: 20px; /* Add some gap between columns and rows */
+    margin: 7px auto; /* Center-align the grid horizontally */
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+
+  .post-card {
+    width: 800px;
+    justify-content: center;
+    height:fit-content;
+    margin:auto;
+    padding: 4%;
+    border: 1px solid rgb(242, 140, 40);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(242, 140, 40, 0.3);
+  }
+
+    .post-image {
+      width: 700px;
+      height: 250px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .post-content {
+      font-size: 1rem;
+      color: #171414;
+      margin-bottom: 10px;
+    }
+
+    .post-title {
+      font-size: 1.5rem;
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .read-more-link {
+      text-decoration: none;
+      color: #d657df;
+      cursor: pointer;
+    }
+
+    .read-more-link:hover {
+      text-decoration:solid
+    }
+
+
+  .comment-section {
+      margin-top: 20px;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+    }
+
+    .comment-box {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      background-color: #f5f5f5;
+      margin-top: 10px;
+    }
+
+    .comment-title {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .comment-user {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .comment-button {
+      background-color: #005eff;
+      color: rgb(235, 228, 228);
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    .comment-button:hover {
+      background-color: #1b9988;
+    }
+
+    /* BlogPost.css */
+
+
+  /* .post-image {
+    width: 100%;
+
+
+  }
+
+  .post-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  .post-content {
+    font-size: 1rem;
+    color: #171414;
+    margin-bottom: 10px;
+  }
+
+  .read-more-link {
+    color: rgb(242, 140, 40);
+    cursor: pointer;
+  }
+
+  .read-more-link:hover {
+    text-decoration: underline;
+  } */

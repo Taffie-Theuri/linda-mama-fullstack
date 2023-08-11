@@ -17,7 +17,7 @@ const Login = ({ setUser }) => {
     name: '',
     email: '',
     password: '',
-    birthdate: '',
+    birthday: '',
     age: '',
     doc: false
   })
@@ -98,7 +98,7 @@ const Login = ({ setUser }) => {
   const handleSignupClick = () => {
     setDocLogin(false)
     setPatLogin(false)
-    setLoginData({name: '', email: '', password: '', birthdate: ''})
+    setLoginData({name: '', email: '', password: '', birthday: ''})
     setErrors([])
   }
 
@@ -141,8 +141,8 @@ const Login = ({ setUser }) => {
             <input className='input' type='text' name='age' id='age' onChange={handleSignUpChange} value={signupData.age}></input>
             <br></br>
             <br></br>
-            <label className='input-label'>Birthdate:</label>
-            <input className='input' type='text' placeholder='mm/dd/yyyy' name='birthdate' id='birthdate' onChange={handleSignUpChange} value={signupData.birthdate}></input>
+            <label className='input-label'>Birthday:</label>
+            <input className='input' type='text' placeholder='mm/dd/yyyy' name='birthday' id='birthday' onChange={handleSignUpChange} value={signupData.birthday}></input>
             <br></br>
             <br></br>
             <label className='input-label'>Password:</label>

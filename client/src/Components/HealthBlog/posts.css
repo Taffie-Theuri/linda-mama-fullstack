@@ -1,0 +1,29 @@
+/* Posts.css */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .pagination button {
+    background-color: rgb(242, 140, 40);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 5px;
+  }
+
+  .pagination button:hover {
+    background-color: rgba(242, 140, 40, 0.8);
+  }
+
+  .pagination span {
+    margin: 0 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
