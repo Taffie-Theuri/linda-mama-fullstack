@@ -17,6 +17,8 @@ import Departments from './Components/Departments/Departments.js';
 import DepartmentProfile from './Components/DepartmentProfile/DepartmentProfile.js';
 import DoctorProfile from './Components/DoctorProfile/DoctorProfile';
 import Portal from './Components/Portal/Portal.js';
+// import DietBlog from './Components/DietBlog/DietBlog';
+// import Blog from './Components/DietBlog/Blog';
 import PortalPatients from './Components/PortalPatients/PortalPatients.js'
 import PortalAppts from './Components/PortalAppts/PortalAppts.js';
 import PortalLabResults from './Components/PortalLabResults/PortalLabResults.js';
@@ -80,6 +82,8 @@ function App() {
         <Route path = '/portal/calendar' element={<PortalCalendar docAppointments={docAppointments} user={user} patientAppts={patientAppts} patients={patients} patientNames={patientNames} />}/>
         <Route path='/portal/appointments' element={<PortalAppts patientAppts={patientAppts} user={user} /> } />
         <Route path='/portal/labresults' element={<PortalLabResults user={user} results={results} /> } />
+        {/* <Route path="/diet_blogs" element={<DietBlog />} />
+        <Route path="/blog/:id" element={<Blog />} /> */}
       </Routes>
       <Footer/>
     </div>

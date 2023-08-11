@@ -1,10 +1,12 @@
 import './DietBlog.css';
+import ChatForum from './ChatForum';
+
 import { useState, useEffect } from 'react'
 import ReactPaginate from 'react-paginate';
 
 
 
-export const BASE_URL = "http://127.0.0.1:3000"
+export const BASE_URL = "http://localhost:4000"
 
 function Card({image, title}){
     return(
@@ -26,7 +28,7 @@ export default function DietBlog() {
 
 
     const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage] = useState(3);
+    const [postsPerPage] = useState(2);
 
     const paginate = ({ selected }) => {
         setCurrentPage(selected + 1);
@@ -44,13 +46,15 @@ export default function DietBlog() {
 
 
 
-console.log(blogPosts)
+       console.log(blogPosts)
     return (
         <div>
         <div className="header">
             <h1>Diet Blog</h1>
             <span className="subheading">A collection of diet blogs</span>
         </div>
+        <div className="content-container">
+
             <div className="card-container">
 
             {currentPosts.map((post, index) => (
@@ -74,7 +78,11 @@ console.log(blogPosts)
 
             </div>
 
+            <div className="chat-container">
+        <ChatForum /> {/* Display the chat forum here */}
+      </div>
 
+        </div>
 
 
         </div>

@@ -6,6 +6,11 @@ Rails.application.routes.draw do
   resources :departments, only: [:index]
   resources :diet_blogs
 
+  get 'diet_blogs/show'
+  get 'diet_blogs/index'
+  get 'diet_blogs/create'
+  resources :messages
+
   post '/doclogin', to: 'sessions#doclogin'
   post '/patientlogin', to: 'sessions#patientlogin'
   delete '/logout', to: 'sessions#logout'

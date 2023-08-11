@@ -1,5 +1,7 @@
 import React from "react";
+import { FiArrowRight } from "react-icons/fi";
 import AboutBackground from "./Assets/about-background.png";
+import { Link } from 'react-router-dom';
 import AboutBackgroundImage from "./Assets/about-background-image.png";
 import HealthyLifestyle from "./Assets/healthy-lifestyle.png";
 import './Home.css'
@@ -26,7 +28,9 @@ const AboutHealth = () => {
           facilisis at fringilla quam.
         </p>
         <div className="about-buttons-container">
-          <button className="secondary-button" href ="/dietblog">Learn More</button>
+        <Link to="/diet_blogs" className="secondary-button">
+        Learn More<FiArrowRight />{" "}
+      </Link>
 
         </div>
       </div>
