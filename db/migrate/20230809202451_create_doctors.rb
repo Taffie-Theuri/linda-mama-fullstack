@@ -4,7 +4,7 @@ class CreateDoctors < ActiveRecord::Migration[7.0]
 
       t.string :name
       t.string :bio
-      t.references :department, null: false, foreign_key: true
+      t.references :department, null: true, foreign_key: true
       t.string :email
       t.string :password_digest
       t.boolean :doc
