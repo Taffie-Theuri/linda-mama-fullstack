@@ -3,3 +3,4 @@ class AddTitleToDoctors < ActiveRecord::Migration[7.0]
     add_column :doctors, :title, :string
   end
 end
+

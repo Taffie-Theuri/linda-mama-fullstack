@@ -46,7 +46,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_11_055610) do
   create_table "doctors", force: :cascade do |t|
     t.string "name"
     t.string "bio"
-    t.bigint "department_id", null: false
+    t.bigint "department_id"
     t.string "email"
     t.string "password_digest"
     t.boolean "doc"
