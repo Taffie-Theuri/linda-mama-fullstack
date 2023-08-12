@@ -11,8 +11,8 @@ Before you begin, make sure you have the following prerequisites:
 ## To set up and run the front-end:
 
 * Clone this repository: git clone <repository_url>
-* Navigate to the project directory: cd linda_mama_frontend
-* Install dependencies: npm install --prefix client 
+* Navigate to the project directory: cd linda-mama-fullstack
+* Install dependencies: npm install --prefix client
 * Start the development server: npm start --prefix client
 
 # Features
